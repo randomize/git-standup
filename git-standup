@@ -196,7 +196,7 @@ fi
 
 GIT_DATE_FORMAT=${option_D:-relative}
 
-GIT_LOG_COMMAND="git --no-pager log \
+GIT_LOG_COMMAND="git submodule foreach git --no-pager log \
     --all
     --no-merges
     --since=\"$SINCE\"
